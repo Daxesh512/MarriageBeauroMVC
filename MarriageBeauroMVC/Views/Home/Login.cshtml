@@ -1,0 +1,51 @@
+﻿@model MarriageBeauroMVC.Models.TblUser
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<center style="background-color:blue">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    @using(Html.BeginForm("Login","Home",FormMethod.Post))
+            {
+                <table style="background-color:gold">
+                    <tr>
+                        <td colspan="2" align="center">
+                            <h1>Login</h1>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>@Html.TextBoxFor(a=>a.userName)</td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>>@Html.TextBoxFor(a=>a.password)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="button"  id="btnLogin" name="Login" style="background-color:red; color:white"/>
+
+                        </td>
+                    </tr>
+
+                </table>
+            }
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</center>
+

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="JK Marriage" />
+    <script type="text/javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="../Content/css/bootstrap.css" type="text/css" rel="stylesheet" media="all"/>
+    <link href="../Content/css/style.css" type="text/css" rel="stylesheet" media="all"/>
+    <!-- font-awesome icons -->
+    <link href="../Content/css/fontawesome-all.min.css" rel="stylesheet"/>
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:100i,400,500,700" rel="stylesheet"/>
+    <link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet"/>
+
+</head>
+<body>
+
+    <div class="banner">
+        <!-- header -->
+        <header>
+            <nav class="mnu navbar-light">
+                <div class="logo" id="logo">
+                    <h1><a href="#">JK Marrige</a></h1>
+                </div>
+                <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                <input type="checkbox" id="drop">
+                <ul class="menu">
+                    <li class="active"><a>@Html.ActionLink("Home", "Index", "Home")</a></li>
+                    <li><a>@Html.ActionLink("About", "About", "Home")</a></li>
+                    <li><a>@Html.ActionLink("Services", "Services", "Home")</a></li>
+                    <li><a>@Html.ActionLink("Gallery", "Gallery", "Home")</a></li>
+                    <li><a>@Html.ActionLink("Contact", "Contact", "Home")</a></li>
+                    <li><a>@Html.ActionLink("Registration", "Registration", "Home")</a></li>
+                    <li><a>@Html.ActionLink("Login", "Login", "Home")</a></li>
+
+
+                    
+                </ul>
+            </nav>
+        </header>
+        <!-- //header -->
+        <div class="container">
+            <!-- banner-text -->
+            <div class="banner-text">
+                <div class="slider-info">
+                    <h3>Destination Weddings</h3>
+                    <a href="#" class="banner-button btn mt-md-5 mt-4">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //banner-text -->
+    <!--banner form-->
+    <section class="banner_form py-5">
+        <div class="container py-lg-3">
+            <div class="row ban_form">
+                <div class="col-lg-7 fom-left">
+                    <div class="categories_sub cats1">
+                        <h2 class="heading-agileinfo">Our Weddings  Story</h2>
+                        <p class="vam"> Matrimonial services is a top certified High Class Marriage Bureau firm in India. We works with successful business and professional families</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 reg-fom">
+                    <img src="../Content/images/1.jpg" class="img-fluid" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="newsletter_right pymd-5 py-4" id="footer">
+        <div class="container">
+            <div class="inner-sec py-md-5 py-3">
+                <div class="row mb-md-4 mb-md-3">
+                    <div class="col-lg-3 col-md-6 social-info text-left">
+                        <h3 class="tittle1 foot mb-md-5 mb-4 text-white">Get in touch</h3>
+                        <p>JK Marriage Beauro. </p>
+                        <p class="my-2">Sector 5, BHavaagar City, INDIA</p>
+                        <p class="phone">phone: +91 735918406</p>
+                       
+                        <p class="phone">
+                            Mail:
+                            <a href="#">jkmarriage@gmail.com</a>
+                        </p>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 social-info text-left">
+                        <h3 class="tittle1 foot mb-md-5 mb-4 text-white">About Us</h3>
+                        <p>
+                           
+                        </p>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 n-right tex-left">
+                        <h3 class="tittle1 foot mb-md-5 mb-4 text-white">Subscribe our Newsletter</h3>
+                        <form action="#" method="post">
+                            <div class="form-group d-flex">
+                                <input class="form-control" type="email" name="Email" placeholder=" Email Address" required="">
+                                <button class="form-control submit text-uppercase" type="submit ">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="copy-right mt-2">
+                        © 2024 Wedding Planner. All Rights Reserved | Developed by
+                        <a href="#"> Jayesh Ahir</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-icons scial justify-content-end">
+                        <li class="mr-1"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <li class="mx-1"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <li class="mx-1"><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                        <li class="mx-1"><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
